@@ -14,6 +14,7 @@ class App extends Component {
   }
   handleCircleSelector = (circleIdx) => {
     this.setState({selCircleIdx: circleIdx});
+    console.log(circleIdx);
   }
 
   render() {
@@ -23,7 +24,7 @@ class App extends Component {
         <main>
           <CircleSelector
             buttons={buttons}
-            selCircle={this.state.selCircleIdx}
+            selCircleIdx={this.state.selCircleIdx}
             handleCircleSelector={this.handleCircleSelector}
           />
           <Circles />

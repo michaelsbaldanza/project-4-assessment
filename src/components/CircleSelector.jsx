@@ -6,8 +6,8 @@ const CircleSelector = (props) => (
           <button
             key={button}
             onClick={() => props.handleCircleSelector(idx)}
-            className={`${button === props.SelCircleIdx ? 'selected' : ''}`}
-        >SELECT BUTTON {idx}</button>
+            className={`${props.selCircleIdx === idx ? 'selected' : ''}`}
+        >SELECT BUTTON {button}</button>
         )}
         
     </div>
