@@ -1,8 +1,13 @@
 import React from 'react';
 
 const Circles = (props) => (
-    <div>
-        Circles
+    <div className="Circles">
+        {props.buttons.map((button, idx) =>
+            <div
+              key={button}
+              className={`${props.selCircleIdx === idx ? 'selected' : ''}`}
+            >{button}</div>
+        )}
     </div>
 );
 
